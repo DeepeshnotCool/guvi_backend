@@ -2,13 +2,14 @@ const nodemailer = require("nodemailer");
 
 exports.mailTransport = () =>
   nodemailer.createTransport({
-    host: "smtp.mailtrap.io",
+    host: "sandbox.smtp.mailtrap.io",
     port: 2525,
     auth: {
       user: `${process.env.MAILTRAP_USERNAME}`,
       pass: `${process.env.MAILTRAP_PASSWORD}`,
     },
   });
+
 
 exports.generatePasswordResetTemplate = (url) => {
   return `   
@@ -78,7 +79,7 @@ exports.generatePasswordResetTemplate = (url) => {
                         </tr>
                         <tr>
                             <td style="text-align:center;">
-                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; <strong>guvi.in</strong></p>
+                                <p style="font-size:14px; color:rgba(69, 80, 86, 0.7411764705882353); line-height:18px; margin:0 0 0;">&copy; <strong>down2UP.in</strong></p>
                             </td>
                         </tr>
                         <tr>

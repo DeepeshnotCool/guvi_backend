@@ -16,6 +16,11 @@ exports.validateUser = [
     .withMessage("Password is missing!")
     .isLength({ min: 8, max: 20 })
     .withMessage("Password must be 8 to 20 characters long!"),
+    check("mobile")
+    .trim()
+    .not()
+    .isEmpty()
+    .withMessage("mobile is missing!"),
 ];
 
 exports.validate = (req, res, next) => {

@@ -69,7 +69,7 @@ exports.forgotPassword = async (req, res) => {
   const newToken = await createRandomBytes()
   const resetToken = new ResetToken({ owner: user._id, token: newToken })
   await resetToken.save();
-//   console.log("hello");
+   console.log("hello");
   mailTransport().sendMail({
     from: "security@gmail.com",
     to: user.email,
