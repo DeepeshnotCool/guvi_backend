@@ -1,6 +1,6 @@
 # down2Up
 
-Welcome to the GUVI Backend repository! This project serves as the backend for the 'down@UP' application, aiming to provide support for speech and facial therapy designed for children with Down syndrome.
+Welcome to the GUVI Backend repository! This project serves as the backend for the 'down2Up' application, aiming to provide support for speech and facial therapy designed for children with Down syndrome.
 
 ## Features
 - RESTful API endpoints for user authentication and management
